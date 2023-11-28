@@ -49,7 +49,8 @@ async def Yumikoo_bot():
     global BOT_ID, BOT_NAME, BOT_USERNAME
     await Yumikoo.start()
     await userbot.start()
-    await pytgcalls.start()                          getme = await Yumikoo.get_me()
+    await pytgcalls.start()
+    getme = await Yumikoo.get_me()
     BOT_ID = getme.id
     BOT_USERNAME = getme.username
     if getme.last_name:
